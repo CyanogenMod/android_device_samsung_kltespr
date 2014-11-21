@@ -29,5 +29,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf \
     $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml
 
+# NFC HAL
+PRODUCT_PACKAGES += \
+    nfc_nci.bcm2079x.default
+
 # common klte
 $(call inherit-product, device/samsung/klte-common/klte.mk)
