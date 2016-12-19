@@ -20,6 +20,13 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- If Voice Radio Technology is RIL_RADIO_TECHNOLOGY_LTE:14 this is the
+         value that should be used instead. A value of
+         RIL_RADIO_TECHNOLOGY_UNKNOWN:0 means there is no replacement value
+         and VoLTE is assumed to be supported.
+         For sprint we will use RIL_RADIO_TECHNOLOGY_1xRTT:6 -->
+    <integer name="config_volte_replacement_rat">6</integer>
+
     <!-- The RadioAccessFamilies supported by the device.
          Empty is viewed as "all".  Only used on devices which
          don't support RIL_REQUEST_GET_RADIO_CAPABILITY
